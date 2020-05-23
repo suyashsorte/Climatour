@@ -1,0 +1,134 @@
+.navbar{
+    background-color: transparent;
+    padding: 0px;
+    margin: 0px;
+}
+.page-footer{
+    background-color: #5D6D7E;
+}
+p{
+    margin: 0%;
+}
+.fa {
+    padding: 18px;
+    width: 50px;
+    text-align: center;
+    border-radius: 50%;
+  }
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    margin-right: 10px;
+}
+.fa-instagram {
+    background: #7D3C98  ;
+    color: white;
+  }
+
+.main{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.card{
+    padding: 15px;
+}
+.car{
+    height:500px;
+    width:100%;
+}
+.cardp{
+    height: 250px;
+    width: 100%;
+}
+.scaled{
+    transform: scale(1, 1);
+    transition: transform 0.5s ease;
+    
+}
+.scaled:hover{
+    transform: scale(1.5, 1.5);
+    color: black;
+}
+.cardp:hover{
+    transform: scale(1.05, 1.05);
+    transition: transform 0.5s ease;
+}
+.nav-item:hover{
+    background-color: aquamarine;
+}
+.navi{
+    color: black;
+}
+.clima{
+    font-family: 'Kaushan Script', cursive;
+    color:#99ff99;
+    font-weight: bold;
+    margin: 0%;
+    font-size: 25px;
+}
+.nav-item{
+    display: inline-block;
+    margin-left: 70px;
+    padding: 15px;
+    font-size: 23px;
+}
+
+
+#map {
+    height: 95%;
+    width:100%;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#floating-panel {
+    position: relative;
+    z-index: 5;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #999;
+    text-align: center;
+    font-family: 'Sanchez', serif;
+    line-height: 30px;     
+    font-size: 20px;   
+    box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4);
+    display: none;
+}
+#right-panel {
+    position: relative;
+    line-height: 30px;
+    padding-left: 10px;
+    font-size:26px;
+    width: 100%;
+    overflow: auto;
+    font-family: 'Cookie', cursive;
+    border-radius: 5px;
+}
+.adp-substep,.adp-text,.adp-legal,.adp-summary{
+    font-family: 'Pridi', serif;
+}
+
+.nav-item:hover{
+    background-color: aquamarine;
+}
+.wdata{
+    padding-left: 1%;
+    background-color: antiquewhite;
+    border: 1px solid #999;
+    border-radius: 10px;
+}
+ 
+.wdata li{
+    font-family: 'Sawarabi Mincho', sans-serif;
+}
+.wdata li:hover{
+    transform: scale(1.0, 1.50);
+    transition: transform 0.5s ease;
+    font-weight: bold;
+}
+h1{
+    font-family: 'Audiowide', cursive;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pridi" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <title>Climatour-Navigation</title>   
+  </head>
+  <body>
+    <!-- navigation bar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">    
+        <div class="navbar-header ">
+            <a class="navbar-brand clima" href="home.html"><img src="logo.PNG" class="img-responsive" alt="logo">CLIMATOUR</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Navigate</a>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link" href="#aboutus">About Us</a>
+            </li>
+            
+          </ul>
+        </div>
+    </nav>     
+
+    <!-- map -->
+    <div id="floating-panel">
+      <strong>Start:</strong>
+      <select id="start">
+        <option value="rochester, ny">Rochester</option>
+        <option value="chicago, il">Chicago</option>        
+        <option value="joplin, mo">Joplin, MO</option>
+        <option value="oklahoma city, ok">Oklahoma City</option>
+        <option value="amarillo, tx">Amarillo</option>
+        <option value="gallup, nm">Gallup, NM</option>
+        <option value="flagstaff, az">Flagstaff, AZ</option>
+        <option value="winona, az">Winona</option>
+        <option value="kingman, az">Kingman</option>
+        <option value="barstow, ca">Barstow</option>
+        <option value="san bernardino, ca">San Bernardino</option>
+        <option value="los angeles, ca">Los Angeles</option>        
+        <option value="san francisco, ca">San Francisco</option>
+        <option value="new york, ny">New York</option>
+        <option value="seattle, wa">Seattle</option>
+        <option value="napa, ca">Napa</option>
+        <option value="sedona, az">Sedona</option>
+      </select>
+      <br>
+      <strong>End:</strong>
+      <select id="end">
+        <option value="chicago, il">Chicago</option>        
+        <option value="joplin, mo">Joplin, MO</option>
+        <option value="oklahoma city, ok">Oklahoma City</option>
+        <option value="amarillo, tx">Amarillo</option>
+        <option value="gallup, nm">Gallup, NM</option>
+        <option value="flagstaff, az">Flagstaff, AZ</option>
+        <option value="winona, az">Winona</option>
+        <option value="kingman, az">Kingman</option>
+        <option value="barstow, ca">Barstow</option>
+        <option value="san bernardino, ca">San Bernardino</option>
+        <option value="los angeles, ca">Los Angeles</option>
+        <option value="rochester, ny">Rochester</option>
+        <option value="san francisco, ca">San Francisco</option>
+        <option value="new york, ny">New York</option>
+        <option value="seattle, wa">Seattle</option>
+        <option value="napa, ca">Napa</option>
+        <option value="sedona, az">Sedona</option>
+      </select>
+      <b>Mode of Travel: </b>
+      <select id="mode">
+        <option value="DRIVING">Driving</option>
+        <option value="WALKING">Walking</option>
+        <option value="BICYCLING">Bicycling</option>
+        <option value="TRANSIT">Transit</option>
+      </select>
+    </div>
+    <div id="map"></div>   
+    <div id="right-panel"></div>     
+    <div id="weatherdata"></div>
+    <!-- Footer -->
+    <footer class="page-footer font-small mdb-color pt-4">
+      <div class="container text-center text-md-left">   
+        <div class="row text-center text-md-left mt-3 pb-3">    
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <a id='aboutus'><h6 class="text-uppercase mb-4 font-weight-bold">About Us</h6></a>
+            <p>Climatour was built to guide people to their destinations while notifying them about the weather conditions of the destination</p>
+          </div>
+          <hr class="w-100 clearfix d-md-none">    
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Social Media</h6>
+            <div class="mb-5 flex-center">
+                <a href="https://www.facebook.com/sorte.suyash" class="fa fa-facebook" target="_blank"></a>
+                <a href="https://www.instagram.com/suyashsorte/?hl=en" class="fa fa-instagram" target="_blank"></a>
+            </div>
+          </div>
+          <hr class="w-100 clearfix d-md-none">
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mr-3 font-weight-bold">Contact</h6>
+              <p>sorte.suyash@gmail.com</p>                
+              <p>(585) 434-9990</p>
+          </div>                   
+        </div>
+      </div>
+    </footer>
+    <script src="./projectv2.js"></script>    
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAg1tF8OdwENJ5-a8Ail_HXVxp3hez2uAE&callback=initializeMap">
+    </script>
+  </body>
+</html>

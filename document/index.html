@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="project1.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <title>Climatour</title>
+</head>
+<body>
+    <p class="head">Web Technologies II</p>
+    <p class="head">Individual Project 1 - Web Services mashup using multiple API</p>
+    <p class="h">Climatour</p>
+    <div class="bg">
+        <h4 class="q">Product definition and list of features</h4>
+        <p class="ans">
+                Climatour was built to guide people to their destinations while notifying them about the weather conditions of the destination.
+                It gives you step by step navigation to your destination. User can also select their mode of transport to get the direction according to that.
+                Moreover it also gives you weather details of the destination.
+        </p>
+        <h4 class="q">High-Level Architecture</h4>
+        <p class="ans">
+                When user selects its start,destination and mode of travel an API call is made to Google Maps 
+                Javascript API to get those postion and rendered it on the map. Next To display the route from
+                start to end an Google Directions API is envoked and it is renderd on the map. Also the Directions 
+                API also displays the step by step directions to the destination and that is displayed on the page(Some of the code of Google maps have been used and modified according to projects needs).
+                Since user has already selected the destination from Open weather map API the weather details are fetched 
+                of that destination city and it is then dispalyed.
+        </p>
+        <h4 class="q">Design Decision</h4>
+        <p class="ans">
+            Design for the home is made very simplistic.There is a navbar to go to navigation page , Home and about us.
+            On the home page there is a carousal of images to give the look and feel of a tourism website.Underneath is the 
+            Cards of few famous places to travel like New York, Miami and Grand Canyon.I have also added a travel video of
+            these places which was taken from youtube channel "Around The World in 4K".All the copyrights and license of those footage are owned by the channel.
+            And below is the footer displaying site details.
+
+            For the navigation page, there is a navbar and underneath is the map to display and below that is the travel direction.
+            When user load the page the directions are not displayed until the user selects start, end and travel mode.Initially the direction
+            were displayed to the right of map but due to responsive issues I have moved it down.Below that is the weather condition of the 
+            destination city.
+
+        </p>
+        <h4 class="q">Technical Decision</h4>
+        <p class="ans">
+            I chose to use bootstrap so that the website is responsive to mobile devices and it becomes easier to code and easy to view.
+            I also used Google Maps Javascript API and Google Directions API as it was in allign with my project aim and target audience.
+            Also they have good documentaion of how to use these api's.
+            To get weather there are many api's in the market but I chose to use openweathermap api as it was free to use and 
+            easy to implement and fetch the data.
+        </p>
+        <h4 class="q">Extras</h4>
+        <p class="ans">
+            I designed the layout of the webpage so that it looks attractive, easy to use and looks professional.
+            The carousal of images, transition and videos makes it more pleasing.
+            
+        </p>
+        <h4 class="q">Credits</h4>
+        <p class="ans">
+            <ul class="ans">
+                <li>
+                    <a href="https://developers.google.com/maps/documentation/javascript/examples/directions-panel">Google directions documentaion</a>
+                </li>
+                <li>
+                <a href="https://developers.google.com/maps/documentation/javascript/examples/directions-travel-modes">Google directions travel mode documentaion</a></li>
+                <li>
+                    
+                    <a href="https://www.youtube.com/channel/UC4F-DMVCe-UbIsweL6kIEfg">Youtube videos</a>
+                </li>
+            </ul>
+        </p>
+    </div>
+
+    <a href="home.html" class="mainweb">Welcome to Climatour</a>
+
+</body>
+</html>
